@@ -10,7 +10,11 @@ data class Settings(
     val extraHourlyRate: Double = 150.0,
     val currency: String = "USD"
 )
-
+data class ReportItem(
+    val date: String,
+    val totalEarnings: Double,
+    val hoursWorked: Double
+)
 data class DailyRecord(
     val date: String = "",
     val totalEarnings: Double = 0.0,

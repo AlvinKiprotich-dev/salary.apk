@@ -25,6 +25,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.salarycal.data.ReportItem
 
 @RequiresApi(Build.VERSION_CODES.O)
 class HomeScreenActivity : ComponentActivity() {

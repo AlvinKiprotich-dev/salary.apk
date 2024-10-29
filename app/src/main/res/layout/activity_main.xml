@@ -1,36 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    android:padding="24dp"
+    android:background="#FFFFFF">
 
+    <!-- Title or App Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SalaryCal"
+        android:textSize="24sp"
+        android:textColor="#6200EE"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:paddingBottom="32dp" />
+
+    <!-- Email EditText -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:backgroundTint="#6200EE"
+        android:fontFamily="sans-serif" />
 
+    <!-- Password EditText -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:backgroundTint="#6200EE"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif" />
 
+    <!-- Login Button -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium" />
 
+    <!-- Register Button -->
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register" />
+        android:text="Register"
+        android:textColor="#6200EE"
+        android:backgroundTint="#EDE7F6"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Footer Note -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secure login with Firebase"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-light" />
 
 </LinearLayout>
