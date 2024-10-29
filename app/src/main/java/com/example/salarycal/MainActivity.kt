@@ -1,5 +1,6 @@
 package com.example.salarycal // Replace with your actual package name
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -49,7 +50,10 @@ class MainActivity : AppCompatActivity() {
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
-                        // Navigate to the next activity (salary calculation)
+                        // Navigate to HomeScreen activity
+                        val intent = Intent(this, HomeScreenActivity::class.java)
+                        startActivity(intent)
+                        finish() // Optional: Close the login activity
                     } else {
                         Toast.makeText(this, "Login failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                     }
