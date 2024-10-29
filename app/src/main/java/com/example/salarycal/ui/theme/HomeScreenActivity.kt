@@ -64,6 +64,7 @@ fun MainApp() {
                 val biWeeklyTotals = listOf(1500.0, 1000.0)
                 val totalHours = 70.0
 
+                // Ensuring the parameters passed to ReportsScreen are consistent
                 ReportsScreen(
                     dailyReports = sampleReports,
                     monthlyTotal = monthlyTotal,
@@ -80,7 +81,7 @@ fun MainApp() {
 fun BottomNavigationBar(navController: NavController) {
     val items = listOf(
         BottomNavItem("calculator", "Calculator", Icons.Filled.Calculate),
-        BottomNavItem("reports", "Reports", Icons.Filled.Assessment), // Replaced with a similar icon
+        BottomNavItem("reports", "Reports", Icons.Filled.Assessment),
         BottomNavItem("settings", "Settings", Icons.Filled.Settings)
     )
 
